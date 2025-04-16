@@ -6,7 +6,7 @@ import 'stay_informed_screen.dart';
 import 'museum_screen.dart';
 import 'theater_screen.dart';
 import 'train_safety_screen.dart';
-import 'parent_club_screen.dart'; // Оставляем имя файла, но класс теперь ParentsClubScreen
+import 'parent_club_screen.dart';
 import 'school_for_parents_screen.dart';
 import 'alumni_chronicle_screen.dart';
 
@@ -23,10 +23,10 @@ class HomeScreen extends StatelessWidget {
       {'title': 'Мероприятия', 'screen': const EventsScreen()},
       {'title': 'В курсе!\nПроконтролируй!', 'screen': const StayInformedScreen()},
       {'title': 'Наш музей', 'screen': const MuseumScreen()},
-      {'title': 'Театр', 'screen': const TheaterScreen()},
+      {'title': 'Школьный театр и\nлитературная гостиная', 'screen': const TheaterScreen()},
       {'title': 'Поезд безопасности', 'screen': const TrainSafetyScreen()},
       {'title': 'Школа для родителей', 'screen': const ParentsSchoolScreen()},
-      {'title': 'Родительский клуб', 'screen': const ParentsClubScreen()}, // Заменили ParentClubScreen
+      {'title': 'Родительский клуб', 'screen': const ParentsClubScreen()},
       {'title': 'Летопись выпускников', 'screen': const AlumniChronicleScreen()},
     ];
 
@@ -106,7 +106,7 @@ class HomeScreen extends StatelessWidget {
                     fontSize: (screenWidth * 0.035).clamp(12.0, 16.0),
                     height: 1.1,
                   ),
-                  maxLines: 2,
+                  maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                 ),
               ),

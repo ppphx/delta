@@ -4,9 +4,11 @@ import 'auth_screen.dart';
 import 'forgot_password_screen.dart';
 import 'home_screen.dart';
 import 'train_safety_screen.dart';
-import 'parent_club_screen.dart'; // Оставляем имя файла, но класс теперь ParentsClubScreen
+import 'parent_club_screen.dart';
 import 'school_for_parents_screen.dart';
 import 'alumni_chronicle_screen.dart';
+import 'museum_screen.dart';
+import 'theater_screen.dart';
 
 void main() {
   runApp(const DeltaApp());
@@ -38,9 +40,11 @@ class DeltaApp extends StatelessWidget {
           userData: ModalRoute.of(context)?.settings.arguments as Map<String, String>? ?? {},
         ),
         '/train_safety': (context) => const TrainSafetyScreen(),
-        '/parent_club': (context) => const ParentsClubScreen(), // Обновили на ParentsClubScreen
+        '/parent_club': (context) => const ParentsClubScreen(),
         '/school_for_parents': (context) => const ParentsSchoolScreen(),
         '/alumni_chronicle': (context) => const AlumniChronicleScreen(),
+        '/museum': (context) => const MuseumScreen(),
+        '/theater': (context) => const TheaterScreen(),
       },
       debugShowCheckedModeBanner: false,
     );
